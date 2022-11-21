@@ -1,0 +1,241 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+/* Nav Bar */
+nav {
+  background-color: #7030cc;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 100px;
+  padding-right: 150px;
+  padding-top: 30px;
+}
+.nav-left {
+  flex: 1;
+}
+.nav-right {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* background-color: red; */
+}
+.nav-right > div > ul {
+  list-style-type: none;
+  display: flex;
+  /* background-color: blue; */
+  justify-content: space-between;
+  color: #fff;
+}
+.list-active {
+  color: #17c3f1;
+  text-decoration: underline;
+  text-decoration-color: #c766dd;
+}
+.list-container {
+  flex: 2;
+}
+.btn-container {
+  flex: 1;
+  display: flex;
+
+  justify-content: flex-end;
+}
+.trial-btn {
+  background-color: #1bbcef;
+  border-color: transparent;
+  color: #fff;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 25px;
+  padding-right: 25px;
+  font-size: 20px;
+}
+.nav-menu-icon {
+  display: none;
+}
+/* Top view */
+.top-view {
+  background-color: #7030cc;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 100px;
+  padding-bottom: 80px;
+}
+.left-top {
+  flex: 1;
+}
+
+.left-top > h1 {
+  /* background-color: red; */
+  font-size: 100px;
+  width: 100%;
+}
+.left-top > p {
+  /* background-color: greenyellow; */
+  width: 80%;
+  font-size: 25px;
+  margin-top: 40px;
+}
+.right-top {
+  flex: 1;
+}
+/* Middle View */
+.middle-view {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 100px;
+}
+.middle-left {
+  flex: 1.5;
+  /* background-color: red; */
+}
+.middle-right {
+  /* background-color: green; */
+  flex: 1;
+}
+.middle-right > h1 {
+  font-size: 45px;
+}
+.list-heading {
+  /* background-color: orange; */
+  width: 80%;
+  display: flex;
+  margin-top: 40px;
+  gap: 20px;
+}
+.inner-list-heading > p {
+  margin-top: 10px;
+  font-size: 20px;
+}
+/* upper Footer */
+.upper-footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.upper-footer > h1 {
+  text-align: center;
+  font-size: 40px;
+}
+.footer {
+  display: flex;
+  /* background-color: red; */
+  justify-content: center;
+  margin-top: 50px;
+}
+.inner-footer {
+  /* background-color: green; */
+  display: flex;
+  width: 80%;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 100px;
+  /* padding-top: 30px; */
+}
+.inner-footer > div {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+
+  padding-top: 30px;
+  width: 250px;
+  height: 350px;
+  border-radius: 50px;
+  box-shadow: 10px 5px 5px #bebebe;
+}
+.image-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 150px;
+  width: 150px;
+  border-radius: 75px;
+}
+.text-view {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.text-view > h1 {
+  margin-top: 40px;
+}
+.text-view > p {
+  text-align: center;
+  font-size: 20px;
+  margin-top: 10px;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+@media screen and (max-width: 1280px) {
+  .nav-menu-icon {
+    display: block;
+    color: #fff;
+  }
+  .nav-right {
+    display: none;
+  }
+  nav {
+    /* background-color: red; */
+    display: flex;
+    justify-content: space-between;
+    padding-right: 20px;
+  }
+}
+@media screen and (max-width: 816px) {
+  .top-view {
+    display: flex;
+    flex-direction: column;
+  }
+  .left-top > h1 {
+    font-size: 50px;
+  }
+  nav {
+    padding-left: 20px;
+  }
+  .middle-view {
+    display: flex;
+    flex-direction: column;
+  }
+  .middle-left {
+    height: 800%;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .middle-right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .middle-right > h1 {
+    font-size: 30px;
+  }
+  .inner-list-heading > h1 {
+    font-size: 20px;
+  }
+  .inner-list-heading > p {
+    font-size: 15px;
+  }
+  .upper-footer > h1 {
+    font-size: 30px;
+    margin-top: 40px;
+  }
+  .inner-footer {
+    display: flex;
+    flex-direction: column;
+  }
+  .inner-footer > div {
+    margin-top: 20px;
+  }
+}
